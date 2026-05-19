@@ -26,10 +26,9 @@ export function Header() {
           <MobileNav />
           <Link
             href="/contact"
-            className="btn-primary hidden px-4 py-2 text-xs sm:inline-flex sm:py-2.5 sm:text-sm lg:px-5"
+            className="btn-primary hidden px-4 py-2 text-xs lg:inline-flex lg:py-2.5 lg:text-sm lg:px-5"
           >
-            <span className="hidden xl:inline">Free Counseling</span>
-            <span className="xl:hidden">Contact</span>
+            Free Counseling
           </Link>
         </div>
       </div>

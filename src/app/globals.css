@@ -1,0 +1,238 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #152a32;
+  --brand-teal: #0088a8;
+  --brand-teal-dark: #006880;
+  --brand-teal-darker: #004d61;
+  --brand-teal-light: #e8f6fa;
+  --brand-orange: #f57c00;
+  --brand-orange-dark: #e06d00;
+  --brand-orange-light: #fff5eb;
+  --muted: #5a7280;
+  --border: #c8dde6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-teal-dark: var(--brand-teal-dark);
+  --color-brand-teal-darker: var(--brand-teal-darker);
+  --color-brand-teal-light: var(--brand-teal-light);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-orange-dark: var(--brand-orange-dark);
+  --color-brand-orange-light: var(--brand-orange-light);
+  --color-muted: var(--muted);
+  --color-brand-border: var(--border);
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--brand-teal-darker) 0%,
+    var(--brand-teal) 42%,
+    var(--brand-teal-dark) 72%,
+    #003848 100%
+  );
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-orange to-brand-orange-dark px-6 py-3 text-sm font-bold text-white shadow-lg shadow-brand-orange/25 transition duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-brand-orange/30 active:scale-[0.98];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border-2 border-white/70 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition duration-300 hover:scale-[1.02] hover:border-white hover:bg-white/20 active:scale-[0.98];
+}
+
+.link-animated {
+  @apply inline-flex items-center gap-1 transition duration-300 hover:gap-2;
+}
+
+.input-field {
+  @apply w-full rounded-xl border border-brand-border bg-white px-4 py-3 text-base text-foreground outline-none transition focus:border-brand-teal focus:ring-4 focus:ring-brand-teal/15 sm:text-sm;
+}
+
+/* Hero slider */
+@keyframes hero-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.hero-slide-enter {
+  animation: hero-slide-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-ken-burns {
+  animation: ken-burns 8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+@keyframes hero-dot-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.hero-dot-progress {
+  animation: hero-dot-progress linear forwards;
+}
+
+.hero-dot-paused {
+  animation-play-state: paused;
+}
+
+/* Scroll reveal */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.fade-in-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-hover-lift {
+  @apply transition duration-300 ease-out;
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -12px rgb(0 104 128 / 18%);
+}
+
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.stagger-children.is-visible > *:nth-child(1) {
+  transition-delay: 0ms;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.is-visible > *:nth-child(2) {
+  transition-delay: 80ms;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.is-visible > *:nth-child(3) {
+  transition-delay: 160ms;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.is-visible > *:nth-child(4) {
+  transition-delay: 240ms;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.is-visible > *:nth-child(n + 5) {
+  transition-delay: 320ms;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes page-header-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-header-enter {
+  animation: page-header-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes stat-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.stat-animate {
+  animation: stat-pop 0.5s ease-out both;
+}
+
+/* Layout utilities */
+.section-pad {
+  @apply px-4 py-12 sm:px-6 sm:py-16 lg:py-20;
+}
+
+.container-main {
+  @apply mx-auto max-w-6xl px-4 sm:px-6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide-enter,
+  .hero-dot-progress,
+  .animate-ken-burns,
+  .animate-float,
+  .fade-in-up,
+  .page-header-enter,
+  .stat-animate,
+  .stagger-children > * {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,38 @@
+import Link from "next/link";
+import { Logo } from "@/components/Logo";
+import { MobileNav } from "@/components/MobileNav";
+import { NavLink } from "@/components/NavLink";
+import { siteConfig } from "@/lib/site";
+
+export function Header() {
+  return (
+    <header className="sticky top-0 z-50 border-b border-brand-border/80 bg-white/95 shadow-sm backdrop-blur-md">
+      <div className="relative mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2.5 sm:gap-3 sm:px-6 sm:py-3">
+        <Logo size="header" />
+        <nav
+          className="hidden items-center gap-0.5 lg:flex"
+          aria-label="Main navigation"
+        >
+          {siteConfig.nav.map((item) => (
+            <NavLink
+              key={item.href}
+              href={item.href}
+              label={item.label}
+              variant="desktop"
+            />
+          ))}
+        </nav>
+        <div className="flex shrink-0 items-center gap-2">
+          <MobileNav />
+          <Link
+            href="/contact"
+            className="btn-primary hidden px-4 py-2 text-xs sm:inline-flex sm:py-2.5 sm:text-sm lg:px-5"
+          >
+            <span className="hidden xl:inline">Free Counseling</span>
+            <span className="xl:hidden">Contact</span>
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+}

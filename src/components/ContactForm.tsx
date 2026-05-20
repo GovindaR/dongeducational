@@ -96,7 +96,7 @@ export function ContactForm() {
             value={form.fullName}
             onChange={(e) => updateField("fullName", e.target.value)}
             className="input-field"
-            placeholder="Ram Sharma"
+            placeholder="Ram Lama"
           />
         </label>
         <label className="block">

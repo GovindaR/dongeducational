@@ -12,17 +12,6 @@ export const siteConfig = {
   officeHours: "Sun–Fri: 10:00 AM – 6:00 PM",
   logoPath: "/logo.png",
   faviconPath: "/favicon.png",
-  nav: [
-    { href: "/", label: "Home" },
-    { href: "/programs", label: "Programs" },
-    { href: "/company-in-japan", label: "Company in Japan" },
-    { href: "/services", label: "Services" },
-    { href: "/why-japan", label: "Why Japan" },
-    { href: "/process", label: "Process" },
-    { href: "/about", label: "About" },
-    { href: "/faq", label: "FAQ" },
-    { href: "/contact", label: "Contact" },
-  ],
 } as const;
 
 export const programOptions = [

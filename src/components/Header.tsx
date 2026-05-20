@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { MobileNav } from "@/components/MobileNav";
-import { NavLink } from "@/components/NavLink";
-import { siteConfig } from "@/lib/site";
+import { DesktopNav } from "@/components/DesktopNav";
 
 export function Header() {
   return (
@@ -10,17 +9,10 @@ export function Header() {
       <div className="relative mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2.5 sm:gap-3 sm:px-6 sm:py-3">
         <Logo size="header" />
         <nav
-          className="hidden items-center gap-0.5 lg:flex"
+          className="hidden items-center gap-0.5 overflow-visible lg:flex"
           aria-label="Main navigation"
         >
-          {siteConfig.nav.map((item) => (
-            <NavLink
-              key={item.href}
-              href={item.href}
-              label={item.label}
-              variant="desktop"
-            />
-          ))}
+          <DesktopNav />
         </nav>
         <div className="flex shrink-0 items-center gap-2">
           <MobileNav />

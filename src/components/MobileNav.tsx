@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { MobileNavGroup } from "@/components/MobileNavGroup";
 import { NavLink } from "@/components/NavLink";
-import { siteConfig } from "@/lib/site";
+import { isNavGroup, mainNav } from "@/lib/navigation";
 
 function CloseIcon({ className }: { className?: string }) {
   return (
@@ -92,16 +93,24 @@ export function MobileNav() {
           </div>
 
           <ul className="flex-1 space-y-1 overflow-y-auto px-3 py-4">
-            {siteConfig.nav.map((item) => (
-              <li key={item.href}>
-                <NavLink
-                  href={item.href}
-                  label={item.label}
-                  variant="mobile"
-                  onClick={close}
+            {mainNav.map((item) =>
+              isNavGroup(item) ? (
+                <MobileNavGroup
+                  key={item.label}
+                  group={item}
+                  onNavigate={close}
                 />
-              </li>
-            ))}
+              ) : (
+                <li key={item.href}>
+                  <NavLink
+                    href={item.href}
+                    label={item.label}
+                    variant="mobile"
+                    onClick={close}
+                  />
+                </li>
+              ),
+            )}
           </ul>
 
           <div className="shrink-0 border-t border-brand-border p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">

@@ -24,8 +24,12 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: siteConfig.faviconPath,
-    apple: siteConfig.faviconPath,
+    icon: [
+      { url: siteConfig.faviconPath, sizes: "32x32", type: "image/png" },
+      { url: "/icon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: siteConfig.appleIconPath,
   },
   openGraph: {
     title: siteConfig.name,

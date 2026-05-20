@@ -12,6 +12,7 @@ export const siteConfig = {
   officeHours: "Sun–Fri: 10:00 AM – 6:00 PM",
   logoPath: "/logo.png",
   faviconPath: "/favicon.png",
+  appleIconPath: "/apple-touch-icon.png",
 } as const;
 
 export const programOptions = [

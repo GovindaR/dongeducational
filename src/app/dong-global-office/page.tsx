@@ -29,7 +29,7 @@ export default function CompanyInJapanPage() {
         bannerKey="dong-global-office"
         label="Business Culture in Japan"
         title="Companies & schools we work with"
-        description="Explore the types of verified institutions DONG places students with — from Tokyo language schools to regional vocational and university programs."
+        description="Explore the types of verified institutions DONG partners with across Japan — from prestigious language schools in Osaka to vocational colleges and university programs in major cities and regional regions nationwide."
         cta={{ href: "/contact", label: "Get your school shortlist" }}
         showLogo={true}
       />

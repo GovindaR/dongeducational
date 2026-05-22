@@ -25,7 +25,7 @@ export const mainNav: readonly NavItem[] = [
       { href: "/about", label: "About us" },
       { href: "/why-japan", label: "Why Japan" },
       { href: "/process", label: "Process" },
-      { href: "/company-in-japan", label: "Company in Japan" },
+      { href: "/dong-global-office", label: "Dong Global Office" },
       { href: "/faq", label: "FAQ" },
     ],
   },

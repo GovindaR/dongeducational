@@ -4,8 +4,9 @@ import { PageHeader } from "@/components/PageHeader";
 import { SectionHeading } from "@/components/SectionHeading";
 import { companiesInJapan, companyInJapanIntro } from "@/lib/content";
 
+
 export const metadata: Metadata = {
-  title: "Company in Japan",
+  title: "Dong Global Office",
   description:
     "Partner language schools, vocational colleges, and universities in Japan that DONG Educational Consultancy works with for students from Nepal.",
 };
@@ -23,11 +24,14 @@ export default function CompanyInJapanPage() {
   return (
     <>
       <PageHeader
-        bannerKey="company-in-japan"
-        label="Partners in Japan"
+        url="/contact"
+        image = "/dong.jpeg" 
+        bannerKey="dong-global-office"
+        label="Business Culture in Japan"
         title="Companies & schools we work with"
         description="Explore the types of verified institutions DONG places students with — from Tokyo language schools to regional vocational and university programs."
         cta={{ href: "/contact", label: "Get your school shortlist" }}
+        showLogo={true}
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">

@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
+import { url } from "inspector";
 
 type LogoProps = {
   className?: string;
   size?: "header" | "footer" | "hero";
   variant?: "default" | "onDark";
+  customImage?: string;
+  url?: string;
 };
 
 const sizes = {
@@ -33,13 +36,15 @@ export function Logo({
   className = "",
   size = "header",
   variant = "default",
+  customImage="",
+  url="",
 }: LogoProps) {
   const config = sizes[size];
   const onDark = variant === "onDark";
 
   return (
     <Link
-      href="/"
+      href={url?url:"/"}
       className={`inline-flex shrink-0 items-center ${className}`}
       aria-label={`${siteConfig.name} — Home`}
     >
@@ -51,7 +56,7 @@ export function Logo({
         }
       >
         <Image
-          src={siteConfig.logoPath}
+          src={customImage?customImage:siteConfig.logoPath}
           alt={siteConfig.name}
           width={config.width}
           height={config.height}

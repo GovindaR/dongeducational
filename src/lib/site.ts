@@ -9,7 +9,7 @@ export const siteConfig = {
   phone: "+977 974-5319528",
   email: "dongeducation98@gmail.com",
   address: "Samakhusi , Kathmandu, Nepal, 44600",
-  officeHours: "Sun–Fri: 10:00 AM – 6:00 PM",
+  officeHours: "Sun–Fri: 7:00 AM – 6:00 PM",
   logoPath: "/logo.png",
   faviconPath: "/favicon.png",
   appleIconPath: "/apple-touch-icon.png",

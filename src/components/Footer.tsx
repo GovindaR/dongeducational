@@ -11,7 +11,7 @@ const footerLinks = {
   ],
   company: [
     { href: "/about", label: "About us" },
-    { href: "/company-in-japan", label: "Company in Japan" },
+    { href: "/dong-global-office", label: "Dong Global Office" },
     { href: "/why-japan", label: "Why Japan" },
     { href: "/process", label: "Application process" },
     { href: "/faq", label: "FAQ" },

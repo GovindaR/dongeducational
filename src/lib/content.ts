@@ -316,7 +316,7 @@ export const companiesInJapan = [
 export const companyInJapanIntro = {
   title: "Verified partner institutions",
   description:
-    "DONG works with language schools, senmon colleges, and universities across Japan. We only recommend institutions that match your profile, budget, and career goals — not every partner below will suit every student.",
+    "Dong works with language schools, senmon colleges, and universities across Japan. We only recommend institutions that match your profile, budget, and career goals — not every partner below will suit every student.",
   note:
     "School names shown are representative partners. Your personalized shortlist is shared during free counseling based on your +2/Bachelor background, Japanese level, and target intake.",
 } as const;

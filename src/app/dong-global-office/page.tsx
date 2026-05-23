@@ -25,7 +25,6 @@ export default function CompanyInJapanPage() {
     <>
       <PageHeader
         url="/contact"
-        image = "/dong.jpeg" 
         bannerKey="dong-global-office"
         label="Business Culture in Japan"
         title="Companies & schools we work with"

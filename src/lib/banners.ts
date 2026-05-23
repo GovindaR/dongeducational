@@ -66,12 +66,12 @@ export type PageBannerConfig = {
 };
 
 export const pageBanners: Record<string, PageBannerConfig> = {
-  programs: { image: "/class.jpeg", accent: "teal" },
-  services: { image: "/namba.jpeg", accent: "orange" },
-  "why-japan": { image: "/osaka_castle.jpeg", accent: "deep" },
-  process: { image: "/osaka.jpeg", accent: "teal" },
-  about: { image: "/graduate.jpeg", accent: "orange" },
-  faq: { image: "/class.jpeg", accent: "deep" },
-  contact: { image: "/namba.jpeg", accent: "teal" },
-  "company-in-japan": { image: "/osaka_castle.jpeg", accent: "orange" },
+  programs: { image: "/program.jpg", accent: "deep" },
+  services: { image: "/service.jpg", accent: "orange" },
+  "why-japan": { image: "/why_japan.jpg", accent: "orange" },
+  process: { image: "/process.jpg", accent: "teal" },
+  about: { image: "/about_us.jpg", accent: "deep" },
+  faq: { image: "/faq.jpg", accent: "orange" },
+  contact: { image: "/class.jpeg", accent: "teal" },
+  "dong-global-office": { image: "/dong.jpeg", accent: "deep" },
 };

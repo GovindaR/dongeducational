@@ -276,49 +276,49 @@ export const aboutContent = {
 
 export const companiesInJapan = [
   {
-    name: "Tokyo International Japanese School",
-    type: "Japanese Language School",
-    city: "Tokyo",
-    programs: ["JLPT preparation", "April & October intake", "University pathway"],
+    name: "Visa Processing & Counseling",
+    type: "Visa & Admission Support",
+    city: "Japan Student Visa Center",
+    programs: ["Student Visa application guidance", "Document Checking & embassy support", "COE(Certificate of Eligibility) assistance"],
   },
   {
-    name: "Osaka Nippon Language Academy",
-    type: "Japanese Language School",
-    city: "Osaka",
-    programs: ["Beginner to N2", "Part-time work orientation", "Senmon pathway"],
+    name: "Accommodation Assistance",
+    type: "Student Support Services",
+    city: "Housing Support Desk",
+    programs: ["Help finding apartments & dormitories", "Move-in support in japan", "Affordable housing guidance"],
   },
   {
-    name: "Fukuoka Asia Language Institute",
-    type: "Japanese Language School",
-    city: "Fukuoka",
-    programs: ["Lower living costs", "Regional university links", "October intake"],
+    name: "Airport Pickup & Arrival Support",
+    type: "Student Support Services",
+    city: "Arrival Support Center",
+    programs: ["Airport pickup arrangement", "SIM card & transportation", "First-day orientation in Japan"],
   },
   {
-    name: "Nagoya Technical Senmon College",
-    type: "Vocational / Senmon",
-    city: "Nagoya",
-    programs: ["IT & engineering", "Automotive", "2-year diploma"],
+    name: "Student Life Support in japan",
+    type: "Student Support Services",
+    city: "Student Life Center",
+    programs: ["Bank account & insurance assistance", "City hall registration", "Daily life counseling for students"],
   },
   {
-    name: "Kyoto Hospitality & Tourism College",
-    type: "Vocational / Senmon",
-    city: "Kyoto",
-    programs: ["Hotel management", "Culinary arts", "Internship in Japan"],
+    name: "Part-time Job Assistance",
+    type: "Career Support Desk",
+    city: "Career Support Desk",
+    programs: ["Guidance for arubaito(part-time jobs)", "Resume & interview preparation", "Work permit application support"],
   },
   {
-    name: "Saitama Global University",
-    type: "University",
-    city: "Saitama",
-    programs: ["Undergraduate", "Some English-taught courses", "Scholarship guidance"],
+    name: "University & Career Guidance",
+    type: "Career & Education Guidance",
+    city: "University Counseling Center",
+    programs: ["School/university admission counseling", "Scholarship guidance", "Career pathway support in japan"],
   },
 ] as const;
 
 export const companyInJapanIntro = {
-  title: "Verified partner institutions",
+  title: "Your Journey to Study in Japan",
   description:
-    "Dong works with language schools, senmon colleges, and universities across Japan. We only recommend institutions that match your profile, budget, and career goals — not every partner below will suit every student.",
+    "Dong Global Office helps students apply to language schools, senmon colleges, and universities across Japan. Personalized school recommendations are provided based on each student’s academic background, budget, Japanese language level, and career goals.",
   note:
-    "School names shown are representative partners. Your personalized shortlist is shared during free counseling based on your +2/Bachelor background, Japanese level, and target intake.",
+    "We help students with school selection, admission processing, and visa support for studying in Japan. Personalized guidance is provided based on academic background, Japanese level, and preferred intake.",
 } as const;
 
 export const intakeDates = [

@@ -15,9 +15,10 @@ const typeStyles: Record<
   (typeof companiesInJapan)[number]["type"],
   string
 > = {
-  "Japanese Language School": "bg-brand-teal-light text-brand-teal-dark",
-  "Vocational / Senmon": "bg-brand-orange-light text-brand-orange-dark",
-  University: "bg-brand-teal/10 text-brand-teal-darker",
+  "Visa & Admission Support": "bg-brand-teal-light text-brand-teal-dark",
+  "Career Support Desk": "bg-brand-teal-light text-brand-teal-dark",
+  "Student Support Services": "bg-brand-orange-light text-brand-orange-dark",
+  "Career & Education Guidance": "bg-brand-teal/10 text-brand-teal-darker",
 };
 
 export default function CompanyInJapanPage() {
@@ -57,7 +58,7 @@ export default function CompanyInJapanPage() {
                 {company.name}
               </h3>
               <p className="mt-1 text-sm font-medium text-brand-orange">
-                {company.city}, Japan
+                {company.city}
               </p>
               <ul className="mt-4 flex-1 space-y-2 border-t border-brand-border pt-4">
                 {company.programs.map((program) => (

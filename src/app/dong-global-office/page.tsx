@@ -28,9 +28,9 @@ export default function CompanyInJapanPage() {
         url="/contact"
         bannerKey="dong-global-office"
         label="Business Culture in Japan"
-        title="Companies & schools we work with"
-        description="Explore the types of verified institutions DONG partners with across Japan — from prestigious language schools in Osaka to vocational colleges and university programs in major cities and regional regions nationwide."
-        cta={{ href: "/contact", label: "Get your school shortlist" }}
+        title="Complete Student Support for Studying in Japan"
+        description="From visa processing and accommodation assistance to career counseling and university guidance, DONG supports students throughout their study journey in Japan."
+        cta={{ href: "/contact", label: "Book free counseling" }}
         showLogo={true}
       />
 
@@ -76,29 +76,26 @@ export default function CompanyInJapanPage() {
       <section className="bg-brand-teal-light/40 py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeading
-            label="How we choose partners"
-            title="Not every school fits every student"
+            label="How DONG Supports Students"
+            title="Every student’s journey is different"
           />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <article className="rounded-2xl bg-white p-6 shadow-sm">
-              <h3 className="font-bold text-brand-teal-dark">Profile match</h3>
+              <h3 className="font-bold text-brand-teal-dark">Profile Match</h3>
               <p className="mt-2 text-sm text-muted">
-                We compare your academic background, Japanese level, and budget
-                with each institution&apos;s real requirements.
+              We provide personalized guidance based on your academic background, Japanese language level, budget, and future study or career goals in Japan.
               </p>
             </article>
             <article className="rounded-2xl bg-white p-6 shadow-sm">
               <h3 className="font-bold text-brand-teal-dark">City & lifestyle</h3>
               <p className="mt-2 text-sm text-muted">
-                Tokyo, Osaka, Fukuoka, and regional cities differ in living costs,
-                part-time job options, and community — we explain the trade-offs.
+              Tokyo, Osaka, Fukuoka, and regional cities differ in living costs, part-time job options, and community — we explain the trade-offs.
               </p>
             </article>
             <article className="rounded-2xl bg-white p-6 shadow-sm">
               <h3 className="font-bold text-brand-teal-dark">Long-term pathway</h3>
               <p className="mt-2 text-sm text-muted">
-                Language school should connect to your next step — senmon, university,
-                or skilled work — not be a dead end.
+              Language school should connect to your next step — senmon, university, or skilled work — not be a dead end.
               </p>
             </article>
           </div>

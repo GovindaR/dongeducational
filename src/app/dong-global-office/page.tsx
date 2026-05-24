@@ -89,13 +89,13 @@ export default function CompanyInJapanPage() {
             <article className="rounded-2xl bg-white p-6 shadow-sm">
               <h3 className="font-bold text-brand-teal-dark">City & lifestyle</h3>
               <p className="mt-2 text-sm text-muted">
-              Tokyo, Osaka, Fukuoka, and regional cities differ in living costs, part-time job options, and community — we explain the trade-offs.
+              Each city in Japan offers a unique student experience, lifestyle, and living cost. We help students choose the right environment for their study journey.
               </p>
             </article>
             <article className="rounded-2xl bg-white p-6 shadow-sm">
               <h3 className="font-bold text-brand-teal-dark">Long-term pathway</h3>
               <p className="mt-2 text-sm text-muted">
-              Language school should connect to your next step — senmon, university, or skilled work — not be a dead end.
+              We help students build a clear future pathway in Japan — from language schools to senmon colleges, universities, career opportunities, and long-term success.
               </p>
             </article>
           </div>
